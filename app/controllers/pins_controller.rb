@@ -1,4 +1,5 @@
 class PinsController < ApplicationController
+respond_to :html, :xml, :json
   before_action :set_pin, only: [:show, :edit, :update, :destroy]
 
   def index
